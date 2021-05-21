@@ -21,7 +21,9 @@ public class Student {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null) {
+            this.name = name;
+        }
     }
 
     public String getEmail() {
@@ -29,7 +31,9 @@ public class Student {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        if (email != null) {
+            this.email = email;
+        }
     }
 
     public String getAddress() {
@@ -37,7 +41,9 @@ public class Student {
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        if (address != null) {
+            this.address = address;
+        }
     }
 
     @Override
