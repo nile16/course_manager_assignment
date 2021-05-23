@@ -1,1 +1,33 @@
-[ ]
+[ {
+  "id" : 2,
+  "courseName" : "Java Fundamentals",
+  "startDate" : "2021-06-09",
+  "weekDuration" : 2,
+  "students" : [ {
+    "id" : 3,
+    "name" : "Lars Davidsson",
+    "email" : "lars@gmail.com",
+    "address" : "Davidsväg 45"
+  }, {
+    "id" : 1,
+    "name" : "Nils Leandersson",
+    "email" : "nils@gmail.com",
+    "address" : "Kallingevägen 76"
+  } ]
+}, {
+  "id" : 1,
+  "courseName" : "Java OOP",
+  "startDate" : "2021-06-16",
+  "weekDuration" : 3,
+  "students" : [ {
+    "id" : 1,
+    "name" : "Nils Leandersson",
+    "email" : "nils@gmail.com",
+    "address" : "Kallingevägen 76"
+  }, {
+    "id" : 2,
+    "name" : "Kalle Davidsson",
+    "email" : "kalle@hotmail.com",
+    "address" : "Achtungstigen 34"
+  } ]
+} ]

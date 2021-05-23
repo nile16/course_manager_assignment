@@ -1,1 +1,16 @@
-[ ]
+[ {
+  "id" : 3,
+  "name" : "Lars Davidsson",
+  "email" : "lars@gmail.com",
+  "address" : "Davidsväg 45"
+}, {
+  "id" : 1,
+  "name" : "Nils Leandersson",
+  "email" : "nils@gmail.com",
+  "address" : "Kallingevägen 76"
+}, {
+  "id" : 2,
+  "name" : "Kalle Davidsson",
+  "email" : "kalle@hotmail.com",
+  "address" : "Achtungstigen 34"
+} ]
