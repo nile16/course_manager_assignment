@@ -21,6 +21,8 @@ public class StudentCollectionRepository implements StudentDao {
 
     @Override
     public Student createStudent(String name, String email, String address) {
+        if (findByEmailIgnoreCase(email) != null) return null;
+
         Student newStudent = new Student(StudentSequencer.nextStudentId());
 
         newStudent.setName(name);
