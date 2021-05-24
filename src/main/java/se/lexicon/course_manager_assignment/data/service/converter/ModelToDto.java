@@ -23,6 +23,7 @@ public class ModelToDto implements Converters {
 
     @Override
     public CourseView courseToCourseView(Course course) {
+        if (course == null) return null;
 
         List<StudentView> studentViews = new ArrayList<>();
 
