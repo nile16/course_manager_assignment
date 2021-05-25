@@ -144,9 +144,9 @@ public class CourseTest {
     void enrollStudent() {
         //Arrange
         Course course = new Course(3);
-        HashSet<Student> result, students = new HashSet<>();
+        HashSet<Student> result;
         Student student1, student2;
-        Boolean result1, result2, result3, result4;
+        boolean result1, result2, result3, result4;
 
         student1 = new Student(4);
         student2 = new Student(5);
@@ -171,9 +171,9 @@ public class CourseTest {
     void unenrollStudent() {
         //Arrange
         Course course = new Course(3);
-        HashSet<Student> result, students = new HashSet<>();
+        HashSet<Student> result;
         Student student1, student2;
-        Boolean result1, result2, result3, result4;
+        boolean result1, result2, result3, result4;
 
         student1 = new Student(4);
         student2 = new Student(5);
@@ -200,7 +200,7 @@ public class CourseTest {
     void equals() {
         //Arrange
         Course course0, course1, course2, course3, course4, course5;
-        Boolean result1, result2, result3, result4, result5;
+        boolean result1, result2, result3, result4, result5;
 
         course0 = new Course(3);
         course1 = new Course(3);
