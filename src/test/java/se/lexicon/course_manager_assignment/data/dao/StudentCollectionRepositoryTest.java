@@ -54,9 +54,9 @@ public class StudentCollectionRepositoryTest {
         result3 = studentDao.findByEmailIgnoreCase("kalle23@hotmail.com");
 
         //Assert
-        Assert.isTrue(student.equals(result1), " ");
-        Assert.isTrue(student.equals(result2), " ");
-        Assert.isNull(result3, " ");
+        Assert.isTrue(student.equals(result1), "Student should be returned");
+        Assert.isTrue(student.equals(result2), "Student should be returned");
+        Assert.isNull(result3, "Result should be null");
     }
 
     @Test
@@ -73,9 +73,9 @@ public class StudentCollectionRepositoryTest {
         result3 = studentDao.findByNameContains("salle");
 
         //Assert
-        Assert.isTrue(result1.contains(student), " ");
-        Assert.isTrue(result2.contains(student), " ");
-        Assert.isTrue(!result3.contains(student), " ");
+        Assert.isTrue(result1.contains(student), "Returned list should contain Student");
+        Assert.isTrue(result2.contains(student), "Returned list should contain Student");
+        Assert.isTrue(!result3.contains(student), "Returned list should not contain Student");
     }
 
     @Test
@@ -92,8 +92,8 @@ public class StudentCollectionRepositoryTest {
         result2 = studentDao.findById(id + 1);
 
         //Assert
-        Assert.isTrue(student.equals(result1), " ");
-        Assert.isNull(result2, " ");
+        Assert.isTrue(student.equals(result1), "Student should be returned");
+        Assert.isNull(result2, "Return value should be null");
     }
 
     @Test
@@ -118,7 +118,7 @@ public class StudentCollectionRepositoryTest {
     void removeStudent() {
         //Arrange
         Student student;
-        Boolean result1, result2;
+        boolean result1, result2;
 
         student = studentDao.createStudent("Kalle Karlsson", "kalle@hotmail.com", "Björkvägen 30, Ankeborg");
 

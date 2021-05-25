@@ -140,7 +140,7 @@ public class CourseManagerTest {
         int studentId, courseId;
         boolean result1, result2;
 
-        studentId = studentDao.createStudent("Kalle Karlsson", "kalle@gmail.com", "Ankegatan 3").getId();
+        studentId = studentDao.createStudent("Kalle Karlsson", "kalle23@gmail.com", "Ankegatan 3").getId();
         courseId = courseDao.createCourse("Java Fundamentals", LocalDate.of(2020, 8, 1), 3).getId();
 
         //Act
@@ -152,7 +152,7 @@ public class CourseManagerTest {
         Assert.isTrue(!result2, "");
         result = courseManager.findById(courseId);
         Assert.isTrue(result.getStudents().get(0).getName().equals("Kalle Karlsson"), "");
-        Assert.isTrue(result.getStudents().get(0).getEmail().equals("kalle@gmail.com"), "");
+        Assert.isTrue(result.getStudents().get(0).getEmail().equals("kalle23@gmail.com"), "");
         Assert.isTrue(result.getStudents().get(0).getAddress().equals("Ankegatan 3"), "");
     }
 
@@ -224,7 +224,7 @@ public class CourseManagerTest {
         courseId = courseDao.createCourse("Java Loops", LocalDate.of(2020, 9, 1), 4).getId();
         courseDao.createCourse("Java OOP", LocalDate.of(2020, 10, 1), 5);
 
-        studentId = studentDao.createStudent("Kalle Karlsson", "kalle@gmail.com", "Ankegatan 3").getId();
+        studentId = studentDao.createStudent("Kalle Karlsson", "kalle33@gmail.com", "Ankegatan 3").getId();
 
         courseManager.addStudentToCourse(courseId, studentId);
 

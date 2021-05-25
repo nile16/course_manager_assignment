@@ -127,12 +127,12 @@ public class StudentTest {
         result6 = student1.equals(null);
 
         //Assert
-        Assert.isTrue(result1, " ");
-        Assert.isTrue(!result2, " ");
-        Assert.isTrue(!result3, " ");
-        Assert.isTrue(!result4, " ");
-        Assert.isTrue(!result5, " ");
-        Assert.isTrue(!result6, " ");
+        Assert.isTrue(result1, "Return value should be true");
+        Assert.isTrue(!result2, "Return value should be false");
+        Assert.isTrue(!result3, "Return value should be false");
+        Assert.isTrue(!result4, "Return value should be false");
+        Assert.isTrue(!result5, "Return value should be false");
+        Assert.isTrue(!result6, "Return value should be false");
     }
 
     @Test
@@ -147,6 +147,6 @@ public class StudentTest {
         result2 = student2.hashCode();
 
         //Assert
-        Assert.isTrue(result1 == result2, " ");
+        Assert.isTrue(result1 == result2, "Hash codes should be equal");
     }
 }
